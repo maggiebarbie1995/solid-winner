@@ -155,3 +155,16 @@ function orderObjectAssign(noOfPizzas, deliver, location){
     newOrder.toppings.push($(this).val());
   });
 }
+$(document).ready(function(){
+  var ordersArray = [];
+  $("#order").click(function(){
+    var numberOfPizzas = 1;
+    var delivery = "no";
+    orderObjectAssign(numberOfPizzas, delivery);
+    newOrder.price();
+    $(".order-charge").text("Price of the single pizza is: " + singlePizzaPrice);
+    $(".order-charge").show();
+    $(".amount").show();
+    $(".submit").show();
+  });
+  
