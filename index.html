@@ -1,0 +1,107 @@
+
+   <!DOCTYPE html>
+   <html lang="en" dir="ltr">
+     <head>
+       <meta charset="utf-8">
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+       <link
+         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+         rel="stylesheet"
+         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+         crossorigin="anonymous"
+       />
+       <link rel="stylesheet" href="css/styles.css">
+       <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+       <script type="text/javascript" src="js/script.js"></script>
+       <title></title>
+     </head>
+     <body>
+      <p style="text-align: center; color: purple;" class="header">PIZZA SHOP</p>
+      <div class="container">
+        <div class="background">
+          <div class="form-part">
+            <form class="form" action="index.html" method="post">
+              <div class="form-group">
+                <label for="size">Choose size: </label>
+                <select class="size form-control" name="pizzaSize" required>
+                  <option value=""></option>
+                  <option value="large">Large :1800/=</option>
+                  <option value="medium">Medium :1200/=</option>
+                  <option value="small">Small :700/=</option>
+                </select>
+              </div>
+              <div class="form-group card-body">
+                <label for="crust">Choose Crust: </label>
+                <select class="crust form-control" name="pizzaCrust">
+                  <option value="none"></option>
+                  <option value="crispy">Crispy :50/=</option>
+                  <option value="stuffed">Stuffed :80/=</option>
+                  <option value="glutten-free">Glutten free :100/=</option>
+                  <option value="flatbread">Flatbread :120/=</option>
+                </select>
+              </div>              
+              <div class="form-group  topping card-body">
+                Choose Topping: <br>
+                <label for=""><input type="checkbox" class="topping" name="topping" value="pepperoni">pepperoni small:60/= medium:100/= large:140/=</label>
+                <label for=""><input type="checkbox" class="topping" name="topping" value="onions">onions small:40/= medium:80/= large:120/=</label><br>
+                <label for=""><input type="checkbox" class="topping" name="topping" value="sausage">sausage small:100/= medium:140/= large:180/=</label>
+                <label for=""><input type="checkbox" class="topping" name="topping" value="bacon">bacon small:150/= medium:200/= large:250/=</label><br>
+                <label for=""><input type="checkbox" class="topping" name="topping" value="extra-cheese">extra cheese small:100/= medium:150/= large:200/=</label>
+                <label for=""><input type="checkbox"class="topping" name="topping" value="black-olives">black olives small:100/= medium:120/= large:140/=</label>
+              </div>
+              <button style="text-align: center;" type="button" id="order" name="button">ORDER</button>
+              <div class="order-charge" style = 'color: red'>
+  
+              </div>
+              <div class=" amount">
+                <label for="">Enter amount of pizzas you need:<input type="number" name="number" id="amount" value=""min="1" size="4" required ></label>
+              </div>
+              <div class="amount">
+                Would you wish for delivery:<br>
+                <ul class="" >
+                  <li class="list-unstyled list-inline-item"><label for="yes"><input type="radio" name="delivery" class="delivery" value="yes" required>Yes</label></li>
+                  <li class="list-unstyled list-inline-item"><label for="yes"><input type="radio" name="delivery" class="delivery" value="no">No</label></li>
+                </ul>
+                </div>
+                <input type="submit" class="submit" name="submit" value="submit">
+                <button type="button" class="another-order" name="button">Make New Order</button>
+            </form>
+          </div>
+        </div>
+        <div class="row checkout">
+          <button type="button" class="checkout"name="button">CHECKOUT</button>
+          <div class="order-details">
+  
+          </div>
+          <span id="total-charge" style="color: white"></span>
+        </div>
+      </div>
+    </body>
+  </html>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
