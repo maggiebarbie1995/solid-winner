@@ -176,3 +176,17 @@ $(document).ready(function(){
       var location = prompt("Enter Your location:");
       alert("Your pizza will be delivered to " + location);
     }
+    orderObjectAssign(numberOfPizzas, delivery, location);
+    $(".order-charge").hide();
+    ordersArray.push(newOrder);
+    $(".checkout").show();
+    $(".another-order").show();
+    $(".another-order").click(function(){
+      $("input#amount").val("");
+      $(".topping").prop("checked", false);
+      $(".delivery").prop("checked", false);
+      $(".size").val("");
+      $(".crust").val("");
+      $("#order").show();
+      $(".checkout").hide();
+    });
