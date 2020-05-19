@@ -190,3 +190,20 @@ $(document).ready(function(){
       $("#order").show();
       $(".checkout").hide();
     });
+    $(".checkout").off("click").on("click",function(){
+      var totalCharge = 0;
+      ordersArray.forEach(function(orderArray) {
+        $(".order-details").append(orderArray.orderDetails());
+        totalCharge += orderArray.price();
+     });
+      if (totalCharge > 0) {
+        $("#total-charge").append("The total Charge is: Kshs " + totalCharge);
+      }
+      ordersArray.splice(0, ordersArray.length);
+      $(".clear").show();
+      $(".another-order").hide();
+      $(".total-charge").empty();
+    });
+  });
+})
+
