@@ -133,3 +133,25 @@ order.prototype.price = function () {
   }
   return totalPrice;
 };
+order.prototype.orderDetails = function () {
+  return ("<span style = 'color: green'>" + this.size + " sized pizza(s):</span>" +
+          "<ul>" +
+            "<li>Crust: " + this.crust + "</li>" +
+            "<li>Topping(s):" + this.toppings.join(', ') + "</li>" +
+            "<li>Quantity: " + this.quantity + "</li>" +
+            "<li style = 'color: blue;'> Charge: Kshs" + this.price() + "</li>" +
+          "</ul>");
+};
+function orderObjectAssign(noOfPizzas, deliver, location){
+  var pizzaSize = $(".size").val();
+  var pizzaCrust = $(".crust").val();
+  if (deliver == "no") {
+    var area = "none";
+  } else {
+    var area = location;
+  }
+  newOrder = new order (pizzaSize, pizzaCrust, noOfPizzas, deliver, area);
+  $.each($("input[name='topping']:checked"), function(){
+    newOrder.toppings.push($(this).val());
+  });
+}
