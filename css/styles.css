@@ -1,1 +1,45 @@
-
+.amount, .submit, .another-order, .checkout, .clear {
+    display: none;
+  }
+  .checkout{
+    margin-top: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: ;
+    padding-bottom: ;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    background-blend-mode: multiply;
+  }
+  .checkout ul{
+    list-style-type: none;
+  }
+  .form-part{
+    background: rgba(0, 0, 0, 0.5);
+    top:20px;
+    width: 100%;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    background-blend-mode: multiply;
+  }
+  body{
+    background-image: url("vin.jpg");
+    width: 100%;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-position: center;
+    background-size: cover;
+  }
+  .header{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: fantasy;
+  }
+  
